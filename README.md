@@ -2,6 +2,18 @@
 
 FineTuned XTTS v2 model to generate Egyptian speech using a custom-made dataset. This model is trained with a pipeline that processes YouTube data into a usable dataset.
 
+
+---
+
+## Table of Contents
+
+1. [Model Overview](#model-overview)
+2. [Dataset Pipeline](#dataset-pipeline)
+3. [Training Details](#training-details)
+4. [Outputs](#outputs)
+5. [How to Use](#how-to-use)
+6. [Future Work](#future-work)
+
 ---
 
 ## Model Overview
@@ -11,15 +23,17 @@ This model was fine-tuned using approximately **15 hours** of Egyptian speech so
 ---
 
 ## Dataset Pipeline
+You can find the dataset pipeline implementation [Youtube_Dataset.ipynb](https://github.com/Mahmoudkandiel/EgyptianXTTSv2/blob/main/Youtube_Dataset.ipynb).
+
+**the link of the url must contain videos with arabic auto-genrated subtitles**
 
 A custom dataset pipeline was designed to process and prepare the audio data. The pipeline includes the following steps:
 
-1. **Data Collection:** Extract audio content from YouTube videos.
-2. **Audio Processing:** Convert audio into a consistent format and remove noise or irrelevant sections.
-3. **Annotation:** Segment and label the audio to match the requirements for speech synthesis.
-4. **Feature Extraction:** Extract features required for training the XTTS v2 model.
+1. **Data Collection:** Extract audio and auto-genrated subtitles content from YouTube videos.
+2. **Annotation:** Segment and label the audio to match the requirements for speech synthesis.
+3. **Dataset format:** format dataset in LJspeech format required for training the XTTS v2 model.
 
-This pipeline ensures that the dataset is clean, well-structured, and ready for fine-tuning.
+This pipeline ensures that the dataset is clean , normalized, well-structured, and ready for fine-tuning.
 
 ---
 
@@ -43,10 +57,9 @@ The fine-tuned model generates high-quality Egyptian Arabic speech that closely 
 
 ## How to Use
 
-1. Clone the repository.
-2. Follow the setup instructions in the documentation.
-3. Use the provided scripts to generate Egyptian Arabic speech from your text input.
-
+1. Run the EG_XTTSv2.pyinb file in colab 
+2. Download the required files  
+3. go to model infernce at the end to generate audio
 ---
 
 ## Future Work
