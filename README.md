@@ -42,6 +42,7 @@ This pipeline ensures that the dataset is clean , normalized, well-structured, a
 - **Base Model:** XTTS v2
 - **Fine-Tuning Data:** 15 hours of Egyptian Arabic speech
 - **Source:** YouTube (primarily from فيلم فى الخمسينة)
+- **Training steps:** 18,000
 
 ---
 
