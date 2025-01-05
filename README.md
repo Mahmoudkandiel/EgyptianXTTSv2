@@ -4,7 +4,7 @@ FineTuned XTTS v2 model to generate Egyptian speech using a custom-made dataset.
 
 
 ---
-
+![XTTS V2 architecture](https://github.com/user-attachments/assets/ed684820-38e6-41d9-9925-e9a286baaf41)
 ## Table of Contents
 
 1. [Model Overview](#model-overview)
@@ -25,7 +25,7 @@ This model was fine-tuned using approximately **15 hours** of Egyptian speech so
 ## Dataset Pipeline
 You can find the dataset pipeline implementation [Youtube_Dataset.ipynb](https://github.com/Mahmoudkandiel/EgyptianXTTSv2/blob/main/Youtube_Dataset.ipynb).
 
-**the link of the url must contain videos with arabic auto-genrated subtitles**
+**The link of the URL must contain videos with arabic auto-genrated subtitles only**
 
 A custom dataset pipeline was designed to process and prepare the audio data. The pipeline includes the following steps:
 
