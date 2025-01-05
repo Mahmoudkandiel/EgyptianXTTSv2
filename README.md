@@ -7,5 +7,8 @@ This model was finetuned using approximately 15 hrs of Egyptian speech from yout
 
 
 
-https://github.com/user-attachments/assets/bc8dc9cd-2ff9-46f5-84a0-ad13bd8f6d3c
+
+
+https://github.com/user-attachments/assets/82a110cc-7718-4f69-a753-be53de74ae7c
+
 
